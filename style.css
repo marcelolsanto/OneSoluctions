@@ -76,7 +76,6 @@ html{
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);/*rgba sendo a responsável pela opacidade*/
-        /*border-radius: 50%*/
 }
 
 .img-header img {/* Class img-Wrapper sendo aplicado na tag img*/
@@ -98,7 +97,7 @@ html{
 
 .banner {
   position: absolute;/*Para o absolute funcionar ele precisa estar dentro de um elemeto reativo, neste caso o header*/
-  top: 30%;
+  top: 35%;
   left: 15%;
 }
 
@@ -253,24 +252,26 @@ html{
 }
 .sobre{
   width: 100%;
-  height: 100vh;
+  height: auto;
   position: relative;
   overflow: hidden;
+  transition: all 2s;
 }
 .imgSobre {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
+  transition: all 2s;
 }
-.imgSobre img {/* Class img-Wrapper sendo aplicado na tag img*/
+.imgSobre img {
   width: 100%;
   height: 100%;
-  object-fit: cover;/* Cobrirá a forma da div class img-wrapper*/
+  object-fit: cover;
   opacity: 0.5;
 }
 .bannerSobre {
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 40%;
 }
 .bannerSobre h1 {
@@ -285,7 +286,7 @@ html{
   font-family: var(--font-secondary);
   color: #fff;
   font-size: 1.5rem;
-  text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 200);
+  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 200);
   margin-bottom: 2rem;
 }
 .contatos{
@@ -293,6 +294,7 @@ html{
   height: 100vh;
   position: relative;
   overflow: hidden;
+  transition: all 2s;
 }
 .imgContatos{
   width: 100%;
@@ -307,7 +309,7 @@ html{
 }
 .bannerContato {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 10%;
 }
 .bannerContato h1 {
@@ -322,7 +324,7 @@ html{
   font-family: var(--font-secondary);
   color: #fff;
   font-size: 1.5rem;
-  text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 200);
+  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 200);
   margin-bottom: 2rem;
 }
 .login{
@@ -330,6 +332,7 @@ html{
   height: 100vh;
   position: relative;
   overflow: hidden;
+  transition: all 2s;
 }
 .imgLogin{
   width: 100%;
@@ -344,8 +347,8 @@ html{
 }
 .bannerLogin {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 35%;
+  left: 45%;
 }
 .bannerLogin h1 {
   color: #ffffff;
@@ -359,7 +362,7 @@ html{
   font-family: var(--font-secondary);
   color: #fff;
   font-size: 1.5rem;
-  text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 200);
+  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 200);
   margin-bottom: 2rem;
 }
 .cadastro{
@@ -367,6 +370,7 @@ html{
   height: 100vh;
   position: relative;
   overflow: hidden;
+  transition: all 2s;
 }
 .imgCdastro{
   width: 100%;
@@ -381,7 +385,7 @@ html{
 }
 .bannerCadastro {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 10%;
 }
 .bannerCadastro h1 {
@@ -396,6 +400,6 @@ html{
   font-family: var(--font-secondary);
   color: #fff;
   font-size: 1.5rem;
-  text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 200);
+  text-shadow: 0.1rem 0.1rem rgb(0, 0, 0);
   margin-bottom: 2rem;
 }
