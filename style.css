@@ -254,9 +254,13 @@ html{
 .sobre{
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
   position: relative;
   overflow: hidden;
+}
+.imgSobre {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .imgSobre img {/* Class img-Wrapper sendo aplicado na tag img*/
   width: 100%;
@@ -287,7 +291,6 @@ html{
 .contatos{
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
   position: relative;
   overflow: hidden;
 }
@@ -325,7 +328,6 @@ html{
 .login{
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
   position: relative;
   overflow: hidden;
 }
@@ -363,20 +365,19 @@ html{
 .cadastro{
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
   position: relative;
   overflow: hidden;
 }
 .imgCdastro{
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);/*rgba sendo a responsável pela opacidade*/
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .imgCadastro img{
   width: 100%;
   height: 100%;
-  object-fit: cover;/* Cobrirá a forma da div class img-wrapper*/
-  opacity: 0.5;
+  object-fit: cover;
+  opacity: 0.9;
 }
 .bannerCadastro {
   position: absolute;
