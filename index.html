@@ -1,119 +1,115 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
-
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-
-    </head>
-    <body>
-        <div class="container">
-            <div class="hamburger">
-                <div class="line" id="line1"></div>
-                <div class="line" id="line2"></div>
-                <div class="line" id="line3"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto individual | Marcelo Santos</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    
+    <script src="https://kit.fontawesome.com/729e0ee7d1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="head">
+            <div class="head_imag">
+                <img src="img/marcelo.jpg">
             </div>
-            <div class="header" id="home">
-                <div class="img-header">
-                    <img src="imagHome.jpg">
+            <nav class="head_menu">
+                <ul class="menu">
+                    <li class="menu_item" onclick="scroll_home()">
+                        <a class="menu-link">
+                        Home</a>
+                    </li>
+                    <li class="menu_item" >
+                        <a href="sobre.html"class="menu-link">Sobre</a>
+                    </li>
+                    <li class="menu_item">
+                            <a href="projetos.html"class="menu-link">Projetos</a>
+                    </li>
+                    <li class="menu_item">
+                        <a  href="orcamento.html"class="menu-link">
+                        Orçamento</a>
+                    </li>
+                    <li class="menu_item" >
+                        <a href="cadastro.html" class="menu-link">
+                        Cadastro</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="suspiro_header"></div>
+        <section class="home" id="home">
+            <div class="home_imag">
+                <img src="img/home.jpg">
+            </div>
+            <div class="indicativo">
+                <a onclick="scroll_valores()" class="menu-link"><i class="fas fa-caret-square-down fa-2x"></i></a>
+            </div>
+            <div class="banner_home">
+                <div class="card">
+                    <h3 id="mensagem">Projetos de Design Interiores</h3>
+                    <p id="p">"Design e decoração dão ao mundo algo que ele não sabia que sentia falta!"<br>Steve Jobs</p>
+                    <div>
+                        <input class="mail"
+                        autofocus="autofocus" placeholder="Digite seu e-mail!" id="in_email" type="email" name="login">
+                        <button    id="btn1"class="btn_home" onclick="enviar()">Receba Notícias!
+                        </button>
+                    </div>
                 </div>
-                <div class="banner">
-                    <h1>One Software Solutions</h1>
-                    <p>Monitoramento e Controle para Data Centers</p>
-                    <button id="saibaMais()" >saiba mais</button>
+            </div>
+        </section>
+        <div class="suspiro"></div>
+        <section class="projetos" id="valores">
+            <div class="row_valores">
+                <div class="columm_one">
+                    <div class="missao" onclick="mostrar_ocultar_missao()">
+                        <img src="img/missao.png">
+                    </div>
+                    <h3 style="display: none" id="h3_missao">Missão</h3>
+                    <p style="display: none" id="p_missao">"Todos os seus sonhos podem se tornar realidade, se você tiver coragem de persegui-los!"</p>
+                </div>
+                <div class="columm_tow" onclick="mostrar_ocultar_visao()">
+                    <div class="cozinha">
+                        <img src="img/visao.png">
+                    </div>
+                    <h3 id="h3_visao" style="display: none">Visão</h3>
+                    <p id="p_visao" style="display: none">"O conhecimento passou a ser o principal fator de produção e geração de riquezas". </p>
+                </div>
+                <div class="columm_tree" onclick="mostrar_ocultar_valor()">
+                    <div class="dormitorio">
+                        <img src="img/valores.png">
+                     </div>
+                    <h3 id="h3_valor" style="display: none">Valor</h3>
+                    <p id="p_valor" style="display: none">"Só amamos aquilo que conhecemos"<br>St° Agostinho. </p>
                 </div>
             </div>
-            <aside class="sidebar">
-                <nav>
-                    <ul class="menu">
-                        <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
-                        <li class="menu-item"><a href="#sobre" class="menu-link">Sobre</a></li>
-                        <li class="menu-item"><a href="#contatos" class="menu-link">Contato</a></li>
-                        <li class="menu-item"><a href="#login" class="menu-link">Login</a></li>
-                        <li class="menu-item"><a href="#cadastro" class="menu-link">Cadastro</a></li>
-                    </ul>
-                </nav>
-                <div class="social-media">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-github-alt"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-            </aside>
-            <a href="#home" id="link-topo">
-              <i class="fas fa-arrow-up"></i>
-            </a>
-        </div>
-
-        <section class="sobre" id="sobre">
-            <div class="imgSobre">
-                <img src="imagSobre.png">
-            </div>
-            <div class="bannerSobre">
-                <h1>O que fazemos</h1>
-                    <p>Lorem ipsum, dolor sit amet 
-                        consectetur adipisicing elit. <br>
-                        Veniam fugit corporis quasi quae
-                        porro deleniti adipisci laborum 
-                        excepturi, molestiae odio 
-                        sapiente tempore dolorem eius 
-                        aspernatur at amet. <br>Magnam, 
-                        voluptatum sit?
-                    </p>
-            </div>
         </section>
-        <section class="contatos" id="contatos">
-            <div class="imgContatos">
-                <img src="Data-Center-e-Energia.jpg">
-            </div>
-            <div class="bannerContato">
-                <h1>Entre em contato! </h1>
-                    <p>Lorem ipsum, dolor sit amet 
-                        consectetur adipisicing elit.<br>
-                        Veniam fugit corporis quasi quae
-                        porro deleniti adipisci laborum 
-                        excepturi,<br> molestiae odio 
-                        sapiente tempore dolorem eius 
-                        aspernatur at amet.<br>Magnam, 
-                        voluptatum sit?
-                    </p>
-            </div>
-        </section>
-        <section class="login" id="login">
-            <div class="imgLogin">
-                <img src="Data-center-inteligente-2.jpg">
-            </div>
-            <div class="bannerLogin">
-                <h1>Entre com seu login! </h1>
-                    <p>Lorem ipsum, dolor sit amet 
-                        consectetur adipisicing elit.<br>
-                        Veniam fugit corporis quasi quae
-                        porro deleniti adipisci laborum 
-                        excepturi,<br> molestiae odio 
-                        sapiente tempore dolorem eius 
-                        aspernatur at amet.<br>Magnam, 
-                        voluptatum sit?
-                    </p>
-            </div>
-        </section>
-        <section class="cadastro" id="cadastro">
-            <div class="imgCadastro">
-                <img src="80-1.jpg">
-            </div>
-            <div class="bannerCadastro">
-                <h1>Faça seu Cadastro! </h1>
-                    <p>Lorem ipsum, dolor sit amet 
-                        consectetur adipisicing elit.<br>
-                        Veniam fugit corporis quasi quae
-                        porro deleniti adipisci laborum 
-                        excepturi,<br> molestiae odio 
-                        sapiente tempore dolorem eius 
-                        aspernatur at amet.<br>Magnam, 
-                        voluptatum sit?
-                    </p>
-            </div>
-        </section>
-    </body>
-    <script src="script.js"></script>
+        <footer class="footer">
+            <p>Desenvolvido por Marcelo Santos, aluno BandTec&COPY; 2020</p>
+            <p id="b_usuario"></p>
+        <nav class="nav">
+            <ul class="list">
+                <li class="menu_footer">
+                    <a href="https://www.linkedin.com/in/marcelo-santos-00093984/"class="menu-link">
+                        <i class="fab fa-linkedin fa-2x"></i></a>
+                </li>
+                <li class="menu_footer">
+                    <a href="https://github.com/marcelolsanto"class="menu-link"><i class="fab fa-github-square fa-2x"></i></a>
+                </li>
+                <li class="menu_footer">
+                    <a href="https://www.instagram.com/marcelolsantos30/"class="menu-link"><i class="fab fa-instagram-square fa-2x"></i></a>
+                </li>
+            </nav>
+        </footer>
+    </div>
+</body>
+<script src="javaScript/index.js"></script>
+<script src="javaScript/calcular.js"></script>
+<script src="javaScript/newsletter.js"></script>
+<script src="javaScript/parcelas.js"></script>
+<script src="javaScript/funcoes.js"></script>
 </html>
